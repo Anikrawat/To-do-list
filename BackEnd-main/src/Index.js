@@ -11,6 +11,8 @@ app.use(cors({
     methods:['POST','GET','PATCH','DELETE'],
     credentials:true
 }));
+
+app.options('*', cors());
 app.use(express.json())
 
 app.use('/api/auth',require('../Routes/Auth'))
