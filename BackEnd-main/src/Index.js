@@ -7,7 +7,7 @@ require('../Models/dataBase')
 const app = express()
 const port = process.env.PORT || 5000
 app.use(cors({
-    origin:["https://to-do-list-frontend-green.vercel.app"],
+    origin:"https://to-do-list-frontend-green.vercel.app",
     methods:['POST','GET'],
     credentials:true
 }));
