@@ -8,7 +8,7 @@ const app = express()
 const port = process.env.PORT || 5000
 app.use(cors({
     origin: 'https://to-do-list-frontend-green.vercel.app',
-    methods:['POST','GET'],
+    methods:['POST','GET','PATCH','DELETE'],
     credentials:true
 }));
 app.use(express.json())
