@@ -17,6 +17,9 @@ app.use(express.json())
 
 app.use('/api/auth',require('../Routes/Auth'))
 app.use('/api/task',require('../Routes/Tasks'))
+app.use('/',(req,res)=>{
+    res.send("Server is running");
+})
 
 if(process.env.NODE_ENV == 'production'){
     app.use(express.static('FrontEnd/build'))
