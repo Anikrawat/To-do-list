@@ -8,7 +8,7 @@
             "src":"/(.*)",
             "dest":"src/index.js",
             "headers":{
-                "Acsess-Control-Allow-Origin":"*"
+                "Access-Control-Allow-Origin":"*"
             }
         }
     ]
