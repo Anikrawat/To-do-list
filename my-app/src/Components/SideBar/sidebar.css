@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+
+body{
+    font-family: 'Convergence', sans-serif;
+}
+
+.sideBarMenuItems:hover::before{
+    content: "";
+    height: 2vh;
+    width: 6px;
+    border-radius: 2px;
+    background-color: rgb(222 72 58);
+    position: absolute;
+}
+
+@media (max-width: 1024px) {
+    .mobileSideBarItems{
+        display: none;
+    }
+
+    .mobileSideBar{
+        width: 10vw;
+    }
+
+    .mobileSideBar div li{
+        width: 12vw;
+    }
+}
+
+@media (max-width:640px) {
+    .mobileSideBar{
+        justify-items: center;
+        width: 15vw;
+    }
+
+    .mobileSideBar div{
+        width: 100%;
+        align-items: center;
+    }
+
+    .sideBarMenuItems i{
+        margin: 0;
+    }
+    .sideBarMenuItems div i{
+        margin: 0;
+    }
+    .mobileSideBar:nth-child(2) .sideBarMenuItems{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

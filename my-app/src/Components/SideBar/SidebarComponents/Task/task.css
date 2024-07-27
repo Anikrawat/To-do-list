@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+
+body{
+    font-family: 'Convergence', sans-serif;
+}
+
+
+.tasks::-webkit-scrollbar{
+    display: none;
+    
+}
+
+.tasks::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.tasks:hover::-webkit-scrollbar{
+    display: inline;
+    width: 10px;
+}

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
+.gridElement2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cards::-webkit-scrollbar{
+    height: 10px;
+}
+
+
+.cards::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 10px;
+}

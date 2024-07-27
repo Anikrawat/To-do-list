@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+
+:root{
+    --barWidth:17px;
+    --barHeight:2px;
+    --hamburgerGap:4px;
+    --animationTiming: 200ms ease-in-out;
+}
+
+@media (max-width:1024px){
+    .responsive{
+        display: none;
+    }
+
+    .mobileView{
+        width: 100vw;
+        height: 94vh;
+    }
+}
+
+.responsive{
+    font-family: 'Convergence', sans-serif;
+}
+
+
+.eyeIcon{
+    transform-origin: left center;
+    width: 0px;
+    height: 3px;
+    margin-right: 0.5vh;
+    transform: rotate(45deg);
+    background-color: #374151;
+    appearance: none;
+    border-radius: 0.25rem;
+    pointer-events: none;
+    transition: width var(--animationTiming);
+}
+
+.eyeIconLabel{
+    display: flex;
+    flex-direction: column;
+}
+
+.eyeIcon:checked{
+    width: 25px;
+}
