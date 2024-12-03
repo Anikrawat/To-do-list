@@ -61,7 +61,7 @@ const AppProvider = ({children}) =>{
     }
 
     const fetchTasks = async() => {
-        const incomingTasks = await fetch(`https://to-do-list-henna-nu.vercel.app//api/task/fetchtasks`,{
+        const incomingTasks = await fetch(`https://to-do-list-henna-nu.vercel.app/api/task/fetchtasks`,{
             method: 'GET',
             headers: {
                 "Content-Type":'application/json',
@@ -76,7 +76,7 @@ const AppProvider = ({children}) =>{
 
     const addNewTask = async (e) => {
         e.preventDefault()
-        await fetch(`https://to-do-list-henna-nu.vercel.app//api/task/addtasks`,{
+        await fetch(`https://to-do-list-henna-nu.vercel.app/api/task/addtasks`,{
             method: "POST",
             headers: {
                 "Content-Type":'application/json',
@@ -101,7 +101,7 @@ const AppProvider = ({children}) =>{
     const deleteTask = async (e,noteId) =>{
         e.preventDefault();
 
-        await fetch(`https://to-do-list-henna-nu.vercel.app//api/task/deletetasks/${noteId}`,{
+        await fetch(`https://to-do-list-henna-nu.vercel.app/api/task/deletetasks/${noteId}`,{
             method: "DELETE",
             headers: {
                 "Content-Type":'application/json',
@@ -116,7 +116,7 @@ const AppProvider = ({children}) =>{
     const updateTask = async (e,noteId) => {
         e.preventDefault()
 
-        await fetch(`https://to-do-list-henna-nu.vercel.app//api/task/updatetasks/${noteId}`,{
+        await fetch(`https://to-do-list-henna-nu.vercel.app/api/task/updatetasks/${noteId}`,{
             method: "PATCH",
             headers: {
                 "Content-Type":'application/json',
@@ -142,7 +142,7 @@ const AppProvider = ({children}) =>{
 
 
     const fetchUser = async() => {
-        const user = await fetch(`https://to-do-list-henna-nu.vercel.app//api/auth/getuser`,{
+        const user = await fetch(`https://to-do-list-henna-nu.vercel.app/api/auth/getuser`,{
                 method: 'GET',
                 headers: {
                     "Content-Type":'application/json',
@@ -158,7 +158,7 @@ const AppProvider = ({children}) =>{
 
     const register = async (e) => {
         e.preventDefault();
-        const user = await fetch(`https://to-do-list-henna-nu.vercel.app//api/auth/register`,{
+        const user = await fetch(`https://to-do-list-henna-nu.vercel.app/api/auth/register`,{
             method: "POST",
             headers: {
                 "Content-Type":'application/json'
@@ -182,7 +182,7 @@ const AppProvider = ({children}) =>{
 
     const login = async (e) => {
         e.preventDefault()
-        const user = await fetch(`https://to-do-list-henna-nu.vercel.app//api/auth/login`,{
+        const user = await fetch(`https://to-do-list-henna-nu.vercel.app/api/auth/login`,{
             method: 'POST',
             headers: {
                 "Content-Type":'application/json'
